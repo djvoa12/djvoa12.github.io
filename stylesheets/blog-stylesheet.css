@@ -1,0 +1,96 @@
+#header {
+  position: relative;
+  width: 800px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 24px;
+  background-color: #f1e9d2;
+  font-style: italic;
+  color: red;
+}
+
+#body {
+  position: relative;
+  width: 800px;
+  height: 412px;
+  background-color: #f1e9d2;
+  border: 1px solid black;
+}
+
+.leftdsc1 {
+  position: relative;
+  float: left;
+  height: 40px;
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  border: 1px solid black;
+}
+
+.rightdsc1{
+  position: relative;
+  float: right;
+  height: 40px;
+  width: 646px;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.leftdsc2 {
+  position: relative;
+  float: left;
+  height: 200px;
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  border: 1px solid black;
+}
+
+.rightdsc2 {
+  position: relative;
+  float: right;
+  height: 200px;
+  width: 646px;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.footer {
+  position: relative;
+  width: 800px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 24px;
+  background-color: #f1e9d2;
+}
+
+.normalbox {
+  position: relative;
+  height: 28px;
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid black;
+  top: 5px;
+  left: 10px;
+  bottom: 5px;
+
+}
+
+#messagebox {
+  position: relative;
+  height: 188px;
+  width: 624px;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid black;
+  top: 5px;
+  left: 10px;
+  bottom: 5px;
+}
