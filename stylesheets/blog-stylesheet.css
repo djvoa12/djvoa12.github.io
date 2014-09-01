@@ -1,96 +1,50 @@
-#header {
-  position: relative;
-  width: 800px;
-  height: 60px;
-  display: inline-block;
-  text-align: center;
-  border: 1px solid black;
-  font-size: 24px;
-  background-color: #f1e9d2;
-  font-style: italic;
-  color: red;
-}
-
-#body {
-  position: relative;
-  width: 800px;
-  height: 412px;
-  background-color: #f1e9d2;
-  border: 1px solid black;
-}
-
-.leftdsc1 {
-  position: relative;
-  float: left;
-  height: 40px;
-  width: 150px;
-  display: inline-block;
-  text-align: right;
-  border: 1px solid black;
-}
-
-.rightdsc1{
-  position: relative;
-  float: right;
-  height: 40px;
-  width: 646px;
-  display: inline-block;
-  text-align: left;
-  border: 1px solid black;
-}
-
-.leftdsc2 {
-  position: relative;
-  float: left;
-  height: 200px;
-  width: 150px;
-  display: inline-block;
-  text-align: right;
-  border: 1px solid black;
-}
-
-.rightdsc2 {
-  position: relative;
-  float: right;
-  height: 200px;
-  width: 646px;
-  display: inline-block;
-  text-align: left;
-  border: 1px solid black;
-}
-
-.footer {
-  position: relative;
-  width: 800px;
-  height: 60px;
+.top {
   display: block;
+  position: relative;
+  height: 100px;
+  width: 100%;
   text-align: center;
-  border: 1px solid black;
-  font-size: 24px;
+  background-color: #a52a2a;
+  border: 2px solid #800000;
+  margin: 0px;
+}
+
+article {
+  display: block;
+  position: relative;
+  height: 1000px;
+  width: 100%;
   background-color: #f1e9d2;
+  border: 2px solid #800000;
+  margin: 0px;
 }
 
-.normalbox {
-  position: relative;
-  height: 28px;
-  width: 200px;
-  display: inline-block;
-  text-align: left;
-  border: 1px solid black;
-  top: 5px;
-  left: 10px;
-  bottom: 5px;
-
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-family: times new roman;
+  font-style: italic;
+  color: #800000;
+  margin-bottom: 0px;
 }
 
-#messagebox {
-  position: relative;
-  height: 188px;
-  width: 624px;
-  display: inline-block;
+.date {
+  text-align: center;
+  font-size: 16px;
+  font-family: times new roman;
+  font-style: italic;
+  color: #800000;
+}
+
+hr {
+  display: block;
+  border-top: 2px solid #800000;
+}
+
+p {
   text-align: left;
-  border: 1px solid black;
-  top: 5px;
-  left: 10px;
-  bottom: 5px;
+  font-size: 16px;
+  font-family: times new roman;
+  margin: 3%;
+  word-wrap: break-word
 }
