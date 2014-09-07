@@ -102,7 +102,9 @@ p {
   vertical-align: middle;
   margin: 4px 0px 4px 0px;
 }
-
+#navbar a:hover {
+  color: #00958A;
+}
 
 @media screen and (max-width: 1000px) {
   #navbar {
@@ -110,7 +112,6 @@ p {
     width: 100%;
     text-align: center;
   }
-
   #navbar li {
     display: inline;
     text-align: center;

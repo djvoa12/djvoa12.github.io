@@ -42,10 +42,18 @@ hr {
   font-family: 'Rock Salt';
   color: #CC0033;
 }
-#content {
+#gps {
   display: inline-block;
   border: 2px solid #CC0033;
-  height: 496px;
+  height: 146px;
+  width: 75%;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+#blog {
+  display: inline-block;
+  border: 2px solid #CC0033;
+  height: 246px;
   width: 75%;
   margin-top: 0.5em;
   margin-left: 0.5em;
@@ -85,7 +93,12 @@ p {
   vertical-align: middle;
   margin: 4px 0px 4px 0px;
 }
-
+#navbar a:hover {
+  color: #00958A;
+}
+a:hover {
+  color: #00958A;
+}
 
 @media screen and (max-width: 1000px) {
   #navbar {
