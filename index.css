@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  background-image: url("Red Wall.jpg");
+}
+Header {
+  display: block;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  color: #CC0033;
+  font-family: 'Rock Salt';
+  margin-bottom: -0.75em;
+}
+h5 {
+  text-align: center;
+  color: #606060;
+  font-family: 'Kaushan Script';
+  margin-bottom: 0.75em;
+}
+hr {
+  display: block;
+  height: 1px;
+  border-top: 1px solid #CC0033;
+  width: 100%;
+}
+#navbar {
+  /*border: 1px dashed #CC0033;*/
+  float: left;
+  width: 23%;
+  margin-left: -2em;
+  padding-right: 1em;
+}
+#navbar li {
+  list-style-type: none;
+  text-align: center;
+  border: 1px solid #CC0033;
+  margin: .25em;
+}
+#navbar a {
+  font-size: 1em;
+  font-family: 'Rock Salt';
+  color: #CC0033;
+}
+#image{
+  display: inline-block;
+  float: left;
+  border: 5px solid white;
+  height: 250px;
+  width: 225px;
+  margin-left: 0.5em;
+  padding: 0px;
+}
+#content {
+  display: inline-block;
+  border: 5px solid white;
+  height: 250px;
+  width: 50%;
+  float: left;
+  margin-left: 0.5em;
+}
+#highlight {
+  display: inline-block;
+  border: 2px solid #CC0033;
+  height: 246px;
+  width: 75%;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+h3 {
+  text-align: center;
+  color: #CC0033;
+  font-family: 'Rock Salt';
+  margin-top: 0em;
+  margin-bottom: -.25em;
+}
+#hr2 {
+  display: block;
+  height: 1px;
+  border-top: 1px solid white;
+  width: 99%;
+}
+#hr3 {
+  display: block;
+  height: 1px;
+  border-top: 1px solid #CC0033;
+  width: 99%;
+}
+p {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.2em;
+  font-family: Calibri;
+}
+.icon {
+  height: 20px;
+  vertical-align: middle;
+}
+.sc {
+  height: 40px;
+  vertical-align: middle;
+  margin: 4px 0px 4px 0px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #navbar {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #navbar li {
+    display: inline;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
