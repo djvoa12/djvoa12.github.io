@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <title>My Blog Post Template</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <Header>
+        <h1>CSS Concepts - Positioning</h1>
+        <h5>09-07-14</h5>
+      </Header>
+
+      <hr></hr>
+
+      <Section id="navbar">
+         <ul>
+          <li><a href="http://djvoa12.github.io/index.html">Home</a></li>
+          <li><a href="blog-posts.html">Blog Posts</a></li>
+          <li><a href="education.html">Education</li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="work-experience.html">Work Experience</a></li>
+          <li><a href="https://github.com/djvoa12"><img class="icon" src="../GitHub Logo.png"></a></li>
+          <li><a href="#"><img class="icon" src="../LinkedIn Logo.png"></a></li>
+          <li><a href="http://www.soundcloud.com/voamusic"><img class="sc" src="../Soundcloud Logo.png"</a></a></li>
+        </ul>
+      </Section>
+
+      <Section id="content">
+        <p>
+The position value in CSS helps optimize layouts and manipulating elements to be in you desired location.  There are six values associated with position property: static, relative, absolute, fixed, intial and inherit.
+<br></br>
+Static: Every position is static by default.  It resides in the normal page flow and the positional properties, such as left/right/top/bottom/z-index, have no effect.
+<br></br>
+Relative: It behaves same as static value, but the positional properties take effect.  This means you can move the element from the original (static) position in different directions based on the positional properties you give.
+<br></br>
+<img src="http://cdn.css-tricks.com/wp-content/uploads/2012/03/relativeposition.png">
+<br></br>
+Fixed: It is positioned relative to the viewport and stays fixed in the same location, even if the page is scrolled.  The positional properties are used to specify the location.  Check out <a href="http://learnlayout.com/position.html">Fixed Position Example</a>!  You will see that there is a div with fixed position at the bottom right-hand side of your browser.
+<br></br>
+Absolute: This is the trickiest position value.  It behaves like fixed value, except relative to the nearest positioned (i.e. anything but static value) ancestor, instead of relative to the viewport.  If there are no nearest positioned ancestors, it will use the document body for its relative base.
+<br></br>
+<img src="http://cdn.css-tricks.com/wp-content/uploads/2012/03/positionabsolute.png">
+<br></br>
+Inherit: It takes position value from its parent.
+<br></br>
+Initial: It sets the property to its default value.
+        </p>
+      </section>
+
+      <hr></hr>
+
+      <Footer>
+      </Footer>
+
+    </div>
+
+  </body>
+</html>
