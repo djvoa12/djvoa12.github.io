@@ -45,7 +45,7 @@ hr {
 #content {
   display: inline-block;
   border: 2px solid #CC0033;
-  height: 996px;
+  height: auto;
   width: 75%;
   margin-top: 0.5em;
   margin-left: 0.5em;
@@ -88,6 +88,10 @@ p {
 #navbar a:hover {
   color: #00958A;
 }
+a:hover {
+  color: #00958A;
+}
+
 
 @media screen and (max-width: 1000px) {
   #navbar {
