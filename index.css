@@ -58,6 +58,7 @@ hr {
   width: 50%;
   float: left;
   margin-left: 0.5em;
+  overflow: auto;
 }
 #highlight {
   display: inline-block;
@@ -66,6 +67,7 @@ hr {
   width: 75%;
   margin-top: 0.5em;
   margin-left: 0.5em;
+  overflow: auto;
 }
 h3 {
   text-align: center;
