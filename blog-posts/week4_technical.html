@@ -39,19 +39,19 @@
 <br></br>
 Cycle Method:
 <br></br>
-cycle(n=nil){|obj|block} --> nil
+cycle(n=nil){|obj| block} --> nil
 <br></br>
 This method invokes a block of code for each element of 'enum' repeatedly n times or forever if none or 'nil' is given.  If a non-positive number is given or the collection is empty, this does nothing.  Returns 'nil' if the loop has finished without being interrupted.  Lastly, if no block is given, then an emumerator is returned instead.
 <br></br>
 Examples:
 <br></br>
-numbers = [1,2,3]
+numbers = [1, 2, 3]
 <br></br>
-numbers.cycle {|n| puts n}
-Output: 1,2,3,1,2,3,...forever
+numbers.cycle {|n| puts n} <br>
+Output: 1, 2, 3, 1, 2, 3,... forever
 <br></br>
-numbers.cycle(3) {|n| puts n}
-Output: 1,2,3,1,2,3
+numbers.cycle(3) {|n| puts n} <br>
+Output: 1, 2, 3, 1, 2, 3
         </p>
       </section>
 
