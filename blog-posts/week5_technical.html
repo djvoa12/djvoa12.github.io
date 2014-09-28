@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <title>My Blog Post Template</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <Header>
+        <h1>Ruby: Why Classes?</h1>
+        <h5>09-27-14</h5>
+      </Header>
+
+      <hr></hr>
+
+      <Section id="navbar">
+         <ul>
+          <li><a href="http://djvoa12.github.io/index.html">Home</a></li>
+          <li><a href="http://djvoa12.github.io/blog-posts.html">Blog Posts</a></li>
+          <li><a href="http://djvoa12.github.io/education.html">Education</li>
+          <li><a href="http://djvoa12.github.io/projects.html">Projects</a></li>
+          <li><a href="http://djvoa12.github.io/work-experience.html">Work Experience</a></li>
+          <li><a href="https://github.com/djvoa12"><img class="icon" src="../GitHub Logo.png"></a></li>
+          <li><a href="#"><img class="icon" src="../LinkedIn Logo.png"></a></li>
+          <li><a href="http://www.soundcloud.com/voamusic"><img class="sc" src="../Soundcloud Logo.png"</a></a></li>
+        </ul>
+      </Section>
+
+      <Section id="content">
+        <p>
+A class is just a way of organizing and producing objects with similar attributes and methods.  A basic class consists of the 'class' keyword and the name of the class.
+<br></br>
+class RealEstate<br>
+end
+<br></br>
+You need to create 'initialize' method, which acts as a function that "boots up" each object the class creates.
+<br></br>
+class RealEstate<br>
+  def initialize<br>
+  end<br>
+end
+<br></br>
+We now have to ensure that the class above has '@home_value'.  '@' before a variable is used to tell that it's an instance variable, which means that the variable is attached to the instance of the class.  You are now ready to start creating objects.
+<br></br>
+class RealEstate<br>
+  def initialize(home_value)<br>
+    @home_value = home_value<br>
+  end<br>
+end
+<br></br>
+home = RealEstate.new(178484)
+<br></br>
+Let's create a method 'calc_commission' within the class that returns your estimated commission payment to your realtor if you were to sell the home.  We are assuming that the commission rate nationwide is about 6%.  You can now apply the new method to the home object and it will return your estimated commission payment.
+<br></br>
+class RealEstate
+<br></br>
+  def initialize(home_value)<br>
+    @home_value = home_value<br>
+  end
+<br></br>
+  def calc_commission<br>
+    (@home_value * 0.06).round(2)<br>
+  end<br>
+end
+<br></br>
+home = RealEstate.new(178484)<br>
+home.calc_commission #--> 10709.04
+        </p>
+      </section>
+
+      <hr></hr>
+
+      <Footer>
+      </Footer>
+
+    </div>
+
+  </body>
+</html>
