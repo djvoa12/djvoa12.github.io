@@ -91,7 +91,27 @@ p {
 a:hover {
   color: #00958A;
 }
-
+.ruby {
+  text-align: left;
+  font-size: .75em;
+  color: brown;
+  margin-left: 1em;
+  margin-right: 10em;
+}
+.ruby2 {
+  text-align: left;
+  font-size: .75em;
+  color: brown;
+  margin-left: 2em;
+  margin-right: 10em;
+}
+.ruby3 {
+  text-align: left;
+  font-size: .75em;
+  color: brown;
+  margin-left: 3em;
+  margin-right: 10em;
+}
 
 @media screen and (max-width: 1000px) {
   #navbar {
