@@ -53,7 +53,7 @@ hr {
 #blog {
   display: inline-block;
   border: 2px solid #CC0033;
-  height: 246px;
+  height: auto;
   width: 75%;
   margin-top: 0.5em;
   margin-left: 0.5em;
