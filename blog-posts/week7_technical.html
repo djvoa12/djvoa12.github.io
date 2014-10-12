@@ -43,11 +43,9 @@ Click <a href="http://www.w3schools.com/sql/sql_injection.asp">here</a> if you a
 <br></br>
 Firewall and similar attack detection software provide  little or no defense against full-scale SQL injection attacks.  The Open Web Application Security Project (OWASP), a not-for-profit charitable organization focused on improving the security of software, provides a <a href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet">cheat sheet</a> on SQL injection prevention.  It lists three options for primary defenses against SQL injection.
 <br></br>
-<ol>
-  <li>Option #1: Use of Prepared Statements (Parameterized Queries)</li>
-  <li>Option #2: Use of Stored Procedures</li>
-  <li>Option #3: Escaping all User Supplied Input</li>
-</ol>
+Option #1: Use of Prepared Statements (Parameterized Queries)
+Option #2: Use of Stored Procedures
+Option #3: Escaping all User Supplied Input
 <br></br>
 The first option works by forcing the user to to define all SQL code, and then pass in each parameter to the query later.  The database takes in this style of code and is able to distinguish between code and data and ensure a hacker is not able to change the purpose of the query.  The second option is just like using prepared statements, but the difference is that SQL code for a stored procedure is defined and stored in the database, and then called from the application.  The last option involves escaping user input before putting it in a query.  It's not a recommended method, but it could prove to be useful if you are concerned about rewriting queries as prepared statements or stored procedures might negatively affect your application.
         </p>
