@@ -35,16 +35,16 @@
 
       <Section id="content">
         <p>
-Accordingly to Wikipedia, SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.  It is one of the most common application layer attack techniques, and the issue arises because web applications allow users insert SQL statements to query the database directly.  It occurs when a hacker attempts to pass SQL commands through a web application, and a hacker could achieve a successful attacks that enable him or her to view information in the database or even purge it if the database inputs are not sanitized properly.
+Accordingly to Wikipedia, SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.  It is one of the most common application layer attack techniques, and the issue arises because web applications allow users to insert SQL statements to query the database directly.  It occurs when a hacker attempts to pass SQL commands through a web application, and he or she could achieve successful attacks that enable him or her to view information in the database or even purge it if the database inputs are not sanitized properly.
 <br></br>
 Take a simple login page where a user would enter his or her login id and password to gain access to his or her credentials.  SQL query is generated from these inputs and submitted to the database for verification.  Once verified, the legitimate user would be granted appropriate access.  A hacker can try to bypass the verification stage in order to retrieve the sensitive data behind it through a well-crafted SQL commands.  Lastly, it's good to note that a hacker is not a master-minded thief.  He or she only needs a web browser, in-depth knowledge of SQL, and creative guess work to carry out the attacks.
 <br></br>
 Click <a href="http://www.w3schools.com/sql/sql_injection.asp">here</a> if you are interested in few examples of SQL commands that can lead to SQL injection.
 <br></br>
-Firewall and similar attack detection software provide  little or no defense against full-scale SQL injection attacks.  The Open Web Application Security Project (OWASP), a not-for-profit charitable organization focused on improving the security of software, provides a <a href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet">cheat sheet</a> on SQL injection prevention.  It lists three options for primary defenses against SQL injection.
+Firewall and similar attack detection software provide little or no defense against full-scale SQL injection attacks.  The Open Web Application Security Project (OWASP), a not-for-profit charitable organization focused on improving the security of software, provides a <a href="https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet">cheat sheet</a> on SQL injection prevention.  It lists three options for primary defenses against SQL injection.
 <br></br>
-Option #1: Use of Prepared Statements (Parameterized Queries)
-Option #2: Use of Stored Procedures
+Option #1: Use of Prepared Statements (Parameterized Queries)<br>
+Option #2: Use of Stored Procedures<br>
 Option #3: Escaping all User Supplied Input
 <br></br>
 The first option works by forcing the user to to define all SQL code, and then pass in each parameter to the query later.  The database takes in this style of code and is able to distinguish between code and data and ensure a hacker is not able to change the purpose of the query.  The second option is just like using prepared statements, but the difference is that SQL code for a stored procedure is defined and stored in the database, and then called from the application.  The last option involves escaping user input before putting it in a query.  It's not a recommended method, but it could prove to be useful if you are concerned about rewriting queries as prepared statements or stored procedures might negatively affect your application.
