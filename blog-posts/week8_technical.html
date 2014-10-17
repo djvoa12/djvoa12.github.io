@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <title>My Blog Post Template</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <Header>
+        <h1>What is Rails?</h1>
+        <h5>10-16-14</h5>
+      </Header>
+
+      <hr></hr>
+
+      <Section id="navbar">
+         <ul>
+          <li><a href="http://djvoa12.github.io/index.html">Home</a></li>
+          <li><a href="http://djvoa12.github.io/blog-posts.html">Blog Posts</a></li>
+          <li><a href="http://djvoa12.github.io/education.html">Education</li>
+          <li><a href="http://djvoa12.github.io/projects.html">Projects</a></li>
+          <li><a href="http://djvoa12.github.io/work-experience.html">Work Experience</a></li>
+          <li><a href="https://github.com/djvoa12"><img class="icon" src="../GitHub Logo.png"></a></li>
+          <li><a href="#"><img class="icon" src="../LinkedIn Logo.png"></a></li>
+          <li><a href="http://www.soundcloud.com/voamusic"><img class="sc" src="../Soundcloud Logo.png"</a></a></li>
+        </ul>
+      </Section>
+
+      <Section id="content">
+        <p>
+Rails, often associated with Ruby on Rails, is an open source web application framework written in Ruby.   It utilizes <a href=”http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller”>Model-View-Controller (MVC)</a> architecture to organize web application programming, and its design makes programming web applications easier by making assumptions about the needs of developers.  It allows one to write less code while achieving the same or even greater results when compared to many other languages and frameworks.
+<br></br>
+To better understand Rails, you need to know more about Model-View-Controller framework.  MVC is a way of organizing code to conceal complexity and facilitating the implementation of user interfaces.  It separates the software application into three interconnected sections: the model, the controller, and the view.  Ruby on Rails takes all three of these concepts and packages them together, and developers only need to install the rails gem to have this full development environment for writing web applications.
+<br></br>
+<b>The Model</b>
+<br></br>
+The Model handles all the database interaction in your web application.  It retrieves and stores all objects from the database and also manages data integrity issues.  For example, if you tried to enter a negative integer into a field that is not suppose to contain negative integers, the code in the Model would reject to implement this action.
+<br></br>
+<b>Controller</b>
+<br></br>
+The Controller handles all the web server interaction and assumes its role as the conduit between the Model and the View.  It can grab an object from the database through the Model and then push it to the View, which will render it.  Basically, it can send commands to both the Model and the Viewer to either change the Model’s state (i.e. editing a document) or the View’s presentation of the Model (i.e. scrolling through a document).
+<br></br>
+<b>The View</b>
+<br></br>
+The View creates the HTML code that is displayed in the browser by receiving the data from the Controller.  The View’s function is to focus on formatting and style, and it’s common to see the code being a mixture of HTML and Ruby.
+        </p>
+      </section>
+
+      <hr></hr>
+
+      <Footer>
+      </Footer>
+
+    </div>
+
+  </body>
+</html>
