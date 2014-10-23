@@ -1,6 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-size: 1em;
+  font: inherit;
+  vertical-align: baseline;
+}
+*/
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+pre {
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  margin: 1em;
+  font-size: 100%;
+  font-size: 1.25em;
+  font: inherit;
+  vertical-align: baseline;
+}
 body {
   width: 100%;
-  background-image: url("Red Wall.jpg");
+  background-image: url("imgs/Red Wall.jpg");
 }
 Header {
   display: block;
@@ -26,38 +72,48 @@ hr {
 }
 #navbar {
   /*border: 1px dashed #CC0033;*/
-  float: left;
-  width: 23%;
+  display: block;
   margin-left: -2em;
   padding-right: 1em;
-}
-#navbar li {
-  list-style-type: none;
   text-align: center;
-  border: 1px solid #CC0033;
+}
+#navbar ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
   margin: .25em;
 }
-#navbar a {
-  font-size: 1em;
+#navbar ul li a {
+  font-size: 1.25em;
   font-family: 'Rock Salt';
   color: #CC0033;
+  text-decoration: none;
 }
-#random {
-  display: inline-block;
-  border: 2px solid #CC0033;
-  height: auto;
-  width: 75%;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #blog {
-  display: inline-block;
-  border: 2px solid #CC0033;
+  display: block;
+  border: 5px solid white;
   height: auto;
-  width: 75%;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
+  margin-top:  1em;
+  margin-bottom: 2em;
+  width: 550px;
 }
+#blog article {
+  display: block;
+  height: auto;
+}
+#blog article ul li {
+  list-style: none;
+  text-align: center;
+}
+#blog article ul li a {
+  text-decoration: none;
+  color: #606060;
+  }
 h3 {
   text-align: center;
   color: #CC0033;
@@ -77,39 +133,53 @@ h3 {
   border-top: 1px solid #CC0033;
   width: 99%;
 }
-p {
-  text-align: center;
-  margin-left: 1em;
-  margin-right: 1em;
-  font-size: 1.2em;
-  font-family: Calibri;
-}
 .icon {
-  height: 20px;
-  vertical-align: middle;
+  width: 50%;
+}
+.icon img {
+max-width: 100%;
 }
 .sc {
   height: 40px;
   vertical-align: middle;
   margin: 4px 0px 4px 0px;
 }
+#navbar ul li {
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
 #navbar a:hover {
   color: #00958A;
 }
-a:hover {
-  color: #00958A;
+footer {
+  bottom: 0;
+  width: 100%;
+  position: block;
+  margin-top: 0;
+  height: auto;
+}
+footer div {
+  text-align: center;
+  margin-top: 0.5em;
+}
+footer div ul {
+  list-style: none;
+}
+footer div ul li {
+  display:  inline-block;
 }
 
+/*
 @media screen and (max-width: 1000px) {
   #navbar {
     display: block;
     width: 100%;
     text-align: center;
   }
-
   #navbar li {
     display: inline;
     text-align: center;
     margin-left: 2px;
     margin-right: 2px;
   }
+  */
