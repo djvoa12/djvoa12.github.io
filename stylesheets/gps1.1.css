@@ -57,6 +57,7 @@ p {
   font-size: 14px;
   word-wrap: normal;
   margin: 15px;
+  overflow: auto;
 }
 
 table {
