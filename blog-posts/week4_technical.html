@@ -6,7 +6,21 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <title>My Blog Post Template</title>
+
+    <!--Syntax Highlighter-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shBrushRuby.js"></script>
+    <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/syntaxhighlighter/styles/shCoreDefault.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <!--End of Syntax Highlighter-->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>blog Template</title>
   </head>
 
   <body>
@@ -14,7 +28,7 @@
     <div id="wrapper">
 
       <Header>
-        <h1>Enumerable - Cycle Method</h1>
+        <h1>Ruby: Enumerable - Cycle Method</h1>
         <h5>09-21-14</h5>
       </Header>
 
@@ -23,41 +37,41 @@
       <Section id="navbar">
          <ul>
           <li><a href="http://djvoa12.github.io/index.html">Home</a></li>
-          <li><a href="http://djvoa12.github.io/blog-posts.html">Blog Posts</a></li>
-          <li><a href="http://djvoa12.github.io/education.html">Education</li>
-          <li><a href="http://djvoa12.github.io/projects.html">Projects</a></li>
-          <li><a href="http://djvoa12.github.io/work-experience.html">Work Experience</a></li>
-          <li><a href="https://github.com/djvoa12"><img class="icon" src="../GitHub Logo.png"></a></li>
-          <li><a href="#"><img class="icon" src="../LinkedIn Logo.png"></a></li>
-          <li><a href="http://www.soundcloud.com/voamusic"><img class="sc" src="../Soundcloud Logo.png"</a></a></li>
+          <li><a href="blog-posts.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </Section>
 
-      <Section id="content">
-        <p>
-"Enumerable is possible in Ruby due to the notion of “mixins.” In most languages, code sharing is only possible through inheritance, and inheritance is generally limited to one parent class. In addition to classes, Ruby has modules which are containers for methods and constants. If you want to write code once and share it between a bunch of unrelated classes, you can put it in modules to be “mixed in” with your classes. Note that this is different from sharing an interface, like in Java, where only method signatures are shared." - sitepoint
-<br></br>
-Cycle Method:
-<br></br>
+      <Section id="blog" class="center">
+        <pre>"Enumerable is possible in Ruby due to the notion of “mixins.” In most languages, code sharing is only possible through inheritance, and inheritance is generally limited to one parent class. In addition to classes, Ruby has modules which are containers for methods and constants. If you want to write code once and share it between a bunch of unrelated classes, you can put it in modules to be “mixed in” with your classes. Note that this is different from sharing an interface, like in Java, where only method signatures are shared." - sitepoint
+
+<b>Cycle Method:</b>
+
 cycle(n=nil){|obj| block} --> nil
-<br></br>
+
 This method invokes a block of code for each element of 'enum' repeatedly n times or forever if none or 'nil' is given.  If a non-positive number is given or the collection is empty, this does nothing.  Returns 'nil' if the loop has finished without being interrupted.  Lastly, if no block is given, then an emumerator is returned instead.
-<br></br>
-Examples:
-<br></br>
-numbers = [1, 2, 3]
-<br></br>
-numbers.cycle {|n| puts n} <br>
+
+Example:
+<pre class="brush: ruby">numbers = [1, 2, 3]
+
+numbers.cycle {|n| puts n}
 Output: 1, 2, 3, 1, 2, 3,... forever
-<br></br>
-numbers.cycle(3) {|n| puts n} <br>
-Output: 1, 2, 3, 1, 2, 3
-        </p>
+
+numbers.cycle(3) {|n| puts n}
+Output: 1, 2, 3, 1, 2, 3</pre></pre>
       </section>
 
       <hr></hr>
 
       <Footer>
+        <div>
+          <ul>
+            <li><a href="https://github.com/djvoa12"><img class="icon" src="../imgs/github-sign.svg"></a></li>
+            <li><a href="https://www.linkedin.com/profile/view?id=338938104&trk=nav_responsive_tab_profile_pic"><img class="icon" src="../imgs/linkedin-sign.svg"></a></li>
+            <li><a href="http://www.soundcloud.com/voamusic"><img class="icon" src="../imgs/soundcloud-sign.svg"</a></a></li>
+            <li><a href="https://twitter.com/djvoa12"><img class="icon" src="../imgs/twitter-sign.svg"</a></a></li>
+          </ul>
+        </div>
       </Footer>
 
     </div>
