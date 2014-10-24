@@ -32,7 +32,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
 pre {
   white-space: pre-wrap;       /* CSS 3 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -41,14 +40,14 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
   margin: 1em;
   font-size: 100%;
-  font-size: 1em;
+  font-size: 1.25em;
   font: inherit;
   vertical-align: baseline;
-}
 
+}
 body {
   width: 100%;
-  background-image: url("Red Wall.jpg");
+  background-color: #FFF5E6;
 }
 Header {
   display: block;
@@ -74,36 +73,48 @@ hr {
 }
 #navbar {
   /*border: 1px dashed #CC0033;*/
-  float: left;
-  width: 23%;
+  display: block;
   margin-left: -2em;
   padding-right: 1em;
-}
-#navbar li {
-  list-style-type: none;
   text-align: center;
-  border: 1px solid #CC0033;
-  margin: .25em;
 }
-#navbar a {
-  font-size: 1em;
+#navbar ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+#navbar ul li a {
+  font-size: 1.25em;
   font-family: 'Rock Salt';
   color: #CC0033;
+  text-decoration: none;
 }
-#content {
-  display: inline-block;
-  border: 2px solid #CC0033;
+#navbar a:hover {
+  color: #00958A;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#blog {
+  display: block;
+  border: 5px solid #DCDCDE;
   height: auto;
-  width: 75%;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
+  margin-top:  1em;
+  margin-bottom: 2em;
+  width: 800px;
 }
 h3 {
   text-align: center;
   color: #CC0033;
   font-family: 'Rock Salt';
-  margin-top: 0em;
-  margin-bottom: -.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 #hr2 {
   display: block;
@@ -117,60 +128,53 @@ h3 {
   border-top: 1px solid #CC0033;
   width: 99%;
 }
-p {
-  text-align: left;
-  margin-left: 1em;
-  margin-right: 1em;
-  font-size: 1.2em;
-  font-family: Calibri;
-}
 .icon {
-  height: 20px;
-  vertical-align: middle;
+  width: 50%;
+}
+.icon img {
+max-width: 100%;
 }
 .sc {
   height: 40px;
   vertical-align: middle;
   margin: 4px 0px 4px 0px;
 }
-#navbar a:hover {
+footer {
+  bottom: 0;
+  width: 100%;
+  position: block;
+  margin-top: 0;
+  height: auto;
+}
+footer div {
+  text-align: center;
+  margin-top: 0.5em;
+}
+footer div ul {
+  list-style: none;
+}
+footer div ul li {
+  display:  inline-block;
+}
+b {
+  color:#CC0033;
+}
+pre a {
   color: #00958A;
-}
-a:hover {
-  color: #00958A;
-}
-.ruby {
-  text-align: left;
-  font-size: .75em;
-  color: brown;
-  margin-left: 1em;
-  margin-right: 10em;
-}
-.ruby2 {
-  text-align: left;
-  font-size: .75em;
-  color: brown;
-  margin-left: 2em;
-  margin-right: 10em;
-}
-.ruby3 {
-  text-align: left;
-  font-size: .75em;
-  color: brown;
-  margin-left: 3em;
-  margin-right: 10em;
+  text-decoration: none;
 }
 
+/*
 @media screen and (max-width: 1000px) {
   #navbar {
     display: block;
     width: 100%;
     text-align: center;
   }
-
   #navbar li {
     display: inline;
     text-align: center;
     margin-left: 2px;
     margin-right: 2px;
   }
+  */
