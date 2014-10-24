@@ -6,7 +6,21 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <title>My Blog Post Template</title>
+
+     <!--Syntax Highlighter-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shBrushRuby.js"></script>
+    <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/syntaxhighlighter/styles/shCoreDefault.css"/>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+    <!--End of Syntax Highlighter-->
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>blog Template</title>
   </head>
 
   <body>
@@ -23,86 +37,85 @@
       <Section id="navbar">
          <ul>
           <li><a href="http://djvoa12.github.io/index.html">Home</a></li>
-          <li><a href="http://djvoa12.github.io/blog-posts.html">Blog Posts</a></li>
-          <li><a href="http://djvoa12.github.io/education.html">Education</li>
-          <li><a href="http://djvoa12.github.io/projects.html">Projects</a></li>
-          <li><a href="http://djvoa12.github.io/work-experience.html">Work Experience</a></li>
-          <li><a href="https://github.com/djvoa12"><img class="icon" src="../GitHub Logo.png"></a></li>
-          <li><a href="#"><img class="icon" src="../LinkedIn Logo.png"></a></li>
-          <li><a href="http://www.soundcloud.com/voamusic"><img class="sc" src="../Soundcloud Logo.png"</a></a></li>
+          <li><a href="blog-posts.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </Section>
 
-      <Section id="content">
-        <p>
-Inheritance, as defined by Wikipedia, is when an object or class is based on another object or class, using the same implementation (inheriting from a class) or specifying implementation to maintain the same behavior (realizing an interface; inheriting behavior).
-<br></br>
+      <Section id="blog" class="center">
+        <pre><b>Inheritance</b>, as defined by Wikipedia, is when an object or class is based on another object or class, using the same implementation (inheriting from a class) or specifying implementation to maintain the same behavior (realizing an interface; inheriting behavior).
+
 'Is-a' relationship is where one class A is a subclass of another class B (and so B is a superclass of A).
-<br></br>
-Composition, as defined by Wikipedia, is a technique by which classes may achieve polymorphic behavior and code reuse by containing other classes that implement the desired functionality instead of through inheritance.
-<br></br>
+
+<b>Composition</b>, as defined by Wikipedia, is a technique by which classes may achieve polymorphic behavior and code reuse by containing other classes that implement the desired functionality instead of through inheritance.
+
 'Has-a' relationship is where one object (often called the composited object) "belongs" to (is a part or member of) another object (called the composite type), and behaves according to the rules of ownership.
-<br></br>
+
 Composition is favored in a lot of ways over inheritance as it gives you more flexibility because it utilizes 'has-a' relationship.  Inheritance may be a powerful tool, but code is often re-used and customized in ways not intended by the designer of the super class, which can lead to a mess.  Moreover, it can be difficult to test classes that re-use code from a superclass.  To get around the limitations of inheritance, the most obvious alternative is to use composition.
-<br></br>
-<span class="ruby">class Parent<br></span>
-<span class="ruby2">def implicit<br></span>
-<span class="ruby3">puts "Hello World!"<br></span>
-<span class="ruby2">end<br></span>
-<span class="ruby">end</span>
-<br></br>
-<span class="ruby">class Child < Parent<br></span>
-<span class="ruby">end</span>
-<br></br>
-<span class="ruby">dad = Parent.new<br></span>
-<span class="ruby">son = Child.new</span>
-<br></br>
-<span class="ruby">dad.implicit # => Hello world!<br></span>
-<span class="ruby">son.implicit # => Hello world!</span>
-<br></br>
-In the example above, inheritance is used to pass on the 'implicit' method to from the superclass 'Parent' to class 'Child'.  The same result can be achieved by using composition with 'has-a' relationship.  There is no hierarchy in the example below.  We are initializing '@other' instance variable and assigning a new 'OtherClass' class.  We can now define an 'implicit' method that applies the 'implicit' method that is pre-defined in 'OtherClass' class.
-<br></br>
-<span class="ruby">class OtherClass<br></span>
-<span class="ruby2">def implicit<br></span>
-<span class="ruby3">puts "Hello world!"<br></span>
-<span class="ruby2">end<br></span>
-<span class="ruby">end</span>
-<br></br>
-<span class="ruby">class Child<br></span>
-<span class="ruby2">def initialize<br></span>
-<span class="ruby3">@other = OtherClass.new<br></span>
-<span class="ruby2">end</span>
-<br></br>
-<span class="ruby2">def implicit<br></span>
-<span class="ruby3">@other.implicit<br></span>
-<span class="ruby2">end<br></span>
-<span class="ruby">end</span>
-<br></br>
-<span class="ruby">son = Child.new</span>
-<br></br>
-<span class="ruby">son.implicit # => Hello world!</span>
-<br></br>
-Another way to do composition is by using modules and mixins.  This is done by creating a module with methods that are common to classes and then 'include' them in your class.  See the example below.
-<br></br>
-<span class="ruby">module Other<br></span>
-<span class="ruby2">def implicit<br></span>
-<span class="ruby3">puts "Hello world!"<br></span>
-<span class="ruby2">end<br></span>
-<span class="ruby">end</span>
-<br></br>
-<span class="ruby">class Child<br></span>
-<span class="ruby2">include Other<br></span>
-<span class="ruby">end</span>
-<br></br>
-<span class="ruby">son = Child.new</span>
-<br></br>
-<span class="ruby">son.implicit # => Hello world!</span>
-        </p>
+<pre class="brush: ruby">
+class Parent
+  def implicit
+    puts "Hello World!"
+  end
+end
+
+class Child < Parent
+end
+
+dad = Parent.new
+son = Child.new
+
+dad.implicit # => Hello world!
+son.implicit # => Hello world!
+</pre>In the example above, inheritance is used to pass on the 'implicit' method to from the superclass 'Parent' to class 'Child'.  The same result can be achieved by using composition with 'has-a' relationship.  There is no hierarchy in the example below.  We are initializing '@other' instance variable and assigning a new 'OtherClass' class.  We can now define an 'implicit' method that applies the 'implicit' method that is pre-defined in 'OtherClass' class.
+<pre class="brush: ruby">
+class OtherClass
+  def implicit
+    puts "Hello world!"
+  end
+end
+
+class Child
+  def initialize
+    @other = OtherClass.new
+  end
+
+  def implicit
+    @other.implicit
+  end
+end
+
+son = Child.new
+
+son.implicit # => Hello world!
+</pre>Another way to do composition is by using modules and mixins.  This is done by creating a module with methods that are common to classes and then 'include' them in your class.  See the example below.
+<pre class="brush: ruby">
+module Other
+  def implicit
+    puts "Hello world!"
+  end
+end
+
+class Child
+  include Other
+end
+
+son = Child.new
+
+son.implicit # => Hello world!</pre></pre>
       </section>
 
       <hr></hr>
 
       <Footer>
+        <div>
+          <ul>
+            <li><a href="https://github.com/djvoa12"><img class="icon" src="../imgs/github-sign.svg"></a></li>
+            <li><a href="https://www.linkedin.com/profile/view?id=338938104&trk=nav_responsive_tab_profile_pic"><img class="icon" src="../imgs/linkedin-sign.svg"></a></li>
+            <li><a href="http://www.soundcloud.com/voamusic"><img class="icon" src="../imgs/soundcloud-sign.svg"</a></a></li>
+            <li><a href="https://twitter.com/djvoa12"><img class="icon" src="../imgs/twitter-sign.svg"</a></a></li>
+          </ul>
+        </div>
       </Footer>
 
     </div>
