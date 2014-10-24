@@ -28,6 +28,7 @@ Section {
   height: 480px;
   width: 800px;
   border: 1px solid maroon;
+  overflow: auto;
 }
 
 .article1 {
@@ -35,6 +36,7 @@ Section {
   position: relative;
   height: 85  px;
   width: 800px;
+  overflow: auto;
 }
 
 .article2 {
@@ -42,6 +44,7 @@ Section {
   position: relative;
   height: 140px;
   width: 800px;
+  overflow: auto;
 }
 
 h3 {
@@ -57,7 +60,6 @@ p {
   font-size: 14px;
   word-wrap: normal;
   margin: 15px;
-  overflow: auto;
 }
 
 table {
