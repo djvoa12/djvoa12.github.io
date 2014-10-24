@@ -81,13 +81,19 @@ hr {
   display: inline-block;
   list-style: none;
   text-align: center;
-  margin: .25em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
 }
 #navbar ul li a {
   font-size: 1.25em;
   font-family: 'Rock Salt';
   color: #CC0033;
   text-decoration: none;
+}
+#navbar a:hover {
+  color: #00958A;
 }
 .center {
   display: block;
@@ -105,21 +111,27 @@ hr {
 #blog article {
   display: block;
   height: auto;
+  margin-bottom: 1em;
 }
-#blog article ul li {
+#blog article p {
   list-style: none;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-#blog article ul li a {
+#blog article p a {
   text-decoration: none;
   color: #606060;
+  }
+#blog article p a:hover {
+  color: #00958A;
   }
 h3 {
   text-align: center;
   color: #CC0033;
   font-family: 'Rock Salt';
-  margin-top: 0em;
-  margin-bottom: -.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 #hr2 {
   display: block;
@@ -143,13 +155,6 @@ max-width: 100%;
   height: 40px;
   vertical-align: middle;
   margin: 4px 0px 4px 0px;
-}
-#navbar ul li {
-  margin-left: 0.75em;
-  margin-right: 0.75em;
-}
-#navbar a:hover {
-  color: #00958A;
 }
 footer {
   bottom: 0;
