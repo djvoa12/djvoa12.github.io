@@ -1,11 +1,13 @@
 Header {
   display: block;
-  position: relative;
   height: 100px;
   width: 800px;
   border: 1px solid maroon;
 }
-
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
 h1 {
   text-align: center;
   font-family: Times New Roman;
@@ -44,7 +46,6 @@ Section {
   position: relative;
   height: 140px;
   width: 800px;
-  overflow: auto;
 }
 
 h3 {
