@@ -47,7 +47,7 @@ pre {
 }
 body {
   width: 100%;
-  background-color: #FFF5E6;
+  background-image: url("../imgs/Red Wall.jpg");
 }
 Header {
   display: block;
@@ -108,6 +108,7 @@ hr {
   margin-top:  1em;
   margin-bottom: 2em;
   width: 800px;
+  background-color: #FFF5E6;
 }
 h3 {
   text-align: center;
@@ -162,6 +163,10 @@ b {
 pre a {
   color: #00958A;
   text-decoration: none;
+}
+span {
+  color: navy;
+  font-weight: 600;
 }
 
 /*
