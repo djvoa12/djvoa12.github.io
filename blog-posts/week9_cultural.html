@@ -7,7 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 
-    <!--Syntax Highlighter-->
+     <!--Syntax Highlighter-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shCore.js"></script>
     <script type="text/javascript" src="../stylesheets/syntaxhighlighter/scripts/shBrushRuby.js"></script>
@@ -16,7 +16,11 @@
     <script type="text/javascript">SyntaxHighlighter.all();</script>
     <!--End of Syntax Highlighter-->
 
-    <title>My Blog Post Template</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>blog Template</title>
   </head>
 
   <body>
@@ -33,41 +37,40 @@
       <Section id="navbar">
          <ul>
           <li><a href="http://djvoa12.github.io/index.html">Home</a></li>
-          <li><a href="http://djvoa12.github.io/blog-posts.html">Blog Posts</a></li>
-          <li><a href="http://djvoa12.github.io/education.html">Education</li>
-          <li><a href="http://djvoa12.github.io/projects.html">Projects</a></li>
-          <li><a href="http://djvoa12.github.io/work-experience.html">Work Experience</a></li>
-          <li><a href="https://github.com/djvoa12"><img class="icon" src="../GitHub Logo.png"></a></li>
-          <li><a href="#"><img class="icon" src="../LinkedIn Logo.png"></a></li>
-          <li><a href="http://www.soundcloud.com/voamusic"><img class="sc" src="../Soundcloud Logo.png"</a></a></li>
+          <li><a href="blog-posts.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </Section>
 
-      <Section id="content">
-        <p>
-<pre>
-Stack Overflow is the bible for many programmers worldwide.  It is a question and answer website used by professional programmers as well as amateur enthusiasts.  You can ask anything you want and receive answers for many of your inquiries.  Unfortunately, you may find that not everything is straight forward and won’t find answers for everything.  There are ways, however, to improve your chances of striking gold for both inquirer and the one who is seeking pre-answered questions.
+      <Section id="blog" class="center">
+        <pre>Stack Overflow is the bible for many programmers worldwide.  It is a question and answer website used by professional programmers as well as amateur enthusiasts.  You can ask anything you want and receive answers for many of your inquiries.  Unfortunately, you may find that not everything is straight forward and won’t find answers for everything.  There are ways, however, to improve your chances of striking gold for both inquirer and the one who is seeking pre-answered questions.
 
 In order for improve your chances of encountering the answers that are relevant to you, the creator of the initial inquiry needs to write a title that summarizes the specific problem.  Well-formulated title can have many benefits.  If the title is interesting, you are more likely to get participants who will take a stab at answering your concerns and the others who have the same or similar issues can easily search for it.  See the examples below.
 
-<b>Do</b>:
+<b>Do:</b>
 - How do I sort a Ruby array of strings by length?
 - What are the comparison operators available in JavaScript?
 
-<b>Don’t</b>:
+<b>Don’t:</b>
 - Ruby method confusion
 - JavaScript === issue
 
 You want to formulate a title in a way that is specific, concise, grammar error free, and interesting to the readers.  If the title is too short or doesn't include much detail, both the would-be-providers of an answer and readers in general will lose interest and the question will likely go unanswered.  Furthermore, you should not include vague or too much content.  If you need to give code examples, insert just enough code to allow others to reproduce them as no one wants to look at huge blob of code.  Lastly, make sure to review the answers given by others and provide feedback.
 
-If you are a person searching for a relevant answer, you need to search for the right keywords to narrow down your options.  For example, I worked on a challenge where I had to translate a Ruby method into a JavaScript function.  I used ‘each_slice’ built-in method for the Ruby exercise, but I had no idea if JavaScript had a build-in function that works just like or is similar to the Ruby method.  Instead of searching for the characteristics of the ‘each_slice’ method for JavaScript, it would be better to initially search for a title by entering, “Ruby equivalent each_slice JavaScript”.  Moreover, you should refrain from entering anything vague and always want to include the language you are using.
-</pre>
-        </p>
+If you are a person searching for a relevant answer, you need to search for the right keywords to narrow down your options.  For example, I worked on a challenge where I had to translate a Ruby method into a JavaScript function.  I used ‘each_slice’ built-in method for the Ruby exercise, but I had no idea if JavaScript had a build-in function that works just like or is similar to the Ruby method.  Instead of searching for the characteristics of the ‘each_slice’ method for JavaScript, it would be better to initially search for a title by entering, “Ruby equivalent each_slice JavaScript”.  Moreover, you should refrain from entering anything vague and always want to include the language you are using.</pre>
       </section>
 
       <hr></hr>
 
       <Footer>
+        <div>
+          <ul>
+            <li><a href="https://github.com/djvoa12"><img class="icon" src="../imgs/github-sign.svg"></a></li>
+            <li><a href="https://www.linkedin.com/profile/view?id=338938104&trk=nav_responsive_tab_profile_pic"><img class="icon" src="../imgs/linkedin-sign.svg"></a></li>
+            <li><a href="http://www.soundcloud.com/voamusic"><img class="icon" src="../imgs/soundcloud-sign.svg"</a></a></li>
+            <li><a href="https://twitter.com/djvoa12"><img class="icon" src="../imgs/twitter-sign.svg"</a></a></li>
+          </ul>
+        </div>
       </Footer>
 
     </div>
