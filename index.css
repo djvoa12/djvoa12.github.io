@@ -45,9 +45,17 @@ pre {
   vertical-align: baseline;
   color: #606060;
 }
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-image: url("imgs/Red Wall.jpg");
+  background-size: 100% 100%;
 }
 Header {
   display: block;
@@ -112,6 +120,7 @@ Section img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
+  border: 5px solid white;
 }
 #content {
   display: block;
@@ -120,6 +129,13 @@ Section img {
   width: 550px;
   overflow: auto;
   margin-bottom: 2em;
+  background: rgb(360, 20, 30); /* The Fallback */
+  background: rgba(360, 20, 30, 0.1);
+}
+.effect {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
 }
 h3 {
   text-align: center;
@@ -177,7 +193,6 @@ footer div ul {
 footer div ul li {
   display:  inline-block;
 }
-
 /*
 @media screen and (max-width: 1000px) {
   #navbar {

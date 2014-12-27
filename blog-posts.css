@@ -44,9 +44,17 @@ pre {
   font: inherit;
   vertical-align: baseline;
 }
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-image: url("imgs/Red Wall.jpg");
+  background-size: 100% 100%;
 }
 Header {
   display: block;
@@ -107,6 +115,13 @@ hr {
   margin-top:  1em;
   margin-bottom: 2em;
   width: 550px;
+  background: rgb(360, 20, 30); /* The Fallback */
+  background: rgba(360, 20, 30, 0.1);
+}
+.effect {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
 }
 #blog article {
   display: block;
